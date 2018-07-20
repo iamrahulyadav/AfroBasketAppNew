@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_add"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:id="@+id/heading_name"
+        android:background="@color/heading_grey"
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+        android:text="Select Location"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="80dp"
+
+            android:layout_height="80dp"
+            android:background="@drawable/ic_location_red"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+
+            android:text="Your Location"/>
+        <TextView
+            android:id="@+id/txt_location"
+            android:layout_marginTop="10dp"
+android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Location"/>
+
+        <Button
+            android:id="@+id/btn_location"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Use My Location"
+            android:background="@drawable/round_button_selected"
+            android:textColor="@android:color/white"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="OR"/>
+
+        <Button
+            android:id="@+id/btn_select_location"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+android:text="Select Location"
+            android:background="@drawable/round_button"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    </RelativeLayout>
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        />
+
+</LinearLayout>
+</layout>

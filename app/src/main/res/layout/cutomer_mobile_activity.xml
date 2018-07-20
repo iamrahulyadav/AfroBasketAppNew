@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.afrobaskets.App.activity.CustomerMobileActivity">
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_add"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/lin1"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@color/bg_grey"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+      <!--  <ImageView
+            android:layout_width="20dp"
+            android:background="@drawable/ghanaflag"
+            android:layout_height="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:text="+233"/>-->
+        <Spinner
+            android:id="@+id/simpleSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+             />
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        >
+
+     <EditText
+        android:id="@+id/edt_mobile"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="15"
+        android:hint="Mobile Number" />
+
+</android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+     <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:text="Submit"
+         android:layout_below="@+id/lin1"
+         android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:background="@drawable/ic_button"
+        android:textAllCaps="false"/>
+</RelativeLayout>

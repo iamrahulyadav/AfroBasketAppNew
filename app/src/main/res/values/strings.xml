@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AfroBaskets</string>
+    <string name="ss"><font><b>Doritos Nacho \n Cheese</b></font> 1 pkt</string>
+
+
+    <string name="cart_msg">Please add items to cart </string>
+       <string name="about_us">Meaning of Ecommerce :\n\n
+        Internet is the best mode of interaction between businessmen and customers in present times.
+        Buying &amp; selling of products through the mode of websites is popular due to various advance technology oriented concepts.
+        Online business is growing rapidly through various software that help customers to ease the work of buying &amp;
+        selling activities.\nWeb Based Shopping cart application is the mode of online presentation of products for sale.
+        Shopping cart websites provides visualization of products to choose, online payment facility, joint selection of
+        products in form of list, etc. Shopping cart software is the easiest way of doing shopping online by selecting all
+        the goods in the cart and pay once for all selected items
+
+    </string>
+
+    <string name="contact_us">       Webistrasoft Solution, B-87, 1st Floor,\n     Secto-63, Noida,
+        U.P-201301.\n       Email Id-INFO@WEBISTRASOFT.COM,\n        Contact No.-085870 45953.
+    </string>
+    <string name="connectio_error">Please Connect Internet</string>
+
+    <string name="text_with_bullet">\u2022</string>
+
+</resources>

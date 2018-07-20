@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D3D3D3">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout1"
+    android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+
+
+                android:text="#8985858585" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text_order_id"
+
+
+                android:layout_marginTop="10dp"
+                android:text="01 nov 2015" />
+
+            <TextView
+                android:id="@+id/text_order_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="10dp"
+             android:textStyle="bold"
+                android:text="Recived" />
+</LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/layout1"
+                android:layout_marginLeft="30dp"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text2"
+                android:layout_alignStart="@+id/text2"
+                android:layout_below="@+id/text2"
+                android:layout_marginTop="10dp"
+                android:text="4 items" />
+
+                <TextView
+                    android:id="@+id/text_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/text_order_date"
+                    android:layout_alignStart="@+id/text_order_date"
+                    android:layout_alignTop="@+id/text3"
+                    android:textStyle="bold"
+
+                    android:layout_marginTop="10dp"
+
+
+                    android:text="Rs 134" />
+
+            </LinearLayout>
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/ic_chevron_right_black_24dp"
+    android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

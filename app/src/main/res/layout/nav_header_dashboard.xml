@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+android:gravity="center_vertical"
+    android:layout_height="145dp"
+>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:id="@+id/linear1" android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+
+            android:id="@+id/btn_login"
+            android:layout_width="90dp"
+            android:background="@drawable/rectangle"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textColor="@color/bg_grey"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="90dp"
+            android:text="SignUp"
+            android:background="@drawable/rectangle"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+
+            android:textColor="@color/bg_grey"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:id="@+id/address_layout"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:background="@drawable/ic_location"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/location"
+        android:layout_marginLeft="5dp"
+        android:text="XYZ street 2/3 new colony,new delhi-201301"
+        android:textColor="@android:color/darker_gray"
+        android:id="@+id/txt_location"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        <ImageView
+            android:layout_width="25dp"
+            android:background="@drawable/ic_edit_black"
+            android:layout_toRightOf="@+id/txt_location"
+            android:id="@+id/edit_address"
+            android:layout_marginLeft="5dp"
+            android:layout_height="25dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/watch"
+
+            android:layout_width="wrap_content"
+            android:background="@drawable/ic_watch_later_white_24dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:textStyle="bold"
+android:id="@+id/txt_timeslots"
+            android:gravity="left"
+android:layout_toRightOf="@+id/watch"
+            android:layout_marginLeft="5dp"
+            android:text="By tomorrow 8 pm"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/darker_gray"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_grey"
+        />
+</LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:layout_collapseMode="pin">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:id="@+id/rel1"
+        android:background="@color/colorPrimary"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/layout1"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:id="@+id/toolbar_back"
+                android:background="@drawable/ic_back"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_logo"/>
+
+            <FrameLayout
+                android:id="@+id/cart_layout"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ic_shopping_cart"/>
+                <RelativeLayout
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/round_button_selected">
+                    <TextView
+                        android:id="@+id/cart_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="0"/>
+                </RelativeLayout>
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/layout1"
+            android:background="@drawable/ic_rounded_edittext"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="35dp">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/voice"
+                app:queryHint="search from brand"
+                app:iconifiedByDefault="false"/>
+            <ImageView
+                android:id="@+id/voice"
+                android:layout_width="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_voice"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:visibility="gone"
+        android:layout_below="@+id/rel1"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rel1"
+        android:layout_marginTop="10dp"
+       android:layout_above="@+id/progressBarButtoms"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+    <ProgressBar
+        android:id="@+id/progressBarButtoms"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="50dp"
+        android:visibility="gone"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>

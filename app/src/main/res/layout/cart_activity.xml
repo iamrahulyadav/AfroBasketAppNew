@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.afrobaskets.App.activity.CartListActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_add"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:id="@+id/heading_name"
+        android:background="@color/heading_grey"
+        android:textColor="@android:color/black"
+        android:textSize="12dp"
+
+        android:layout_below="@+id/toolbar"
+
+        android:text="Review Order"/>
+
+
+ <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_subcat"
+        android:layout_below="@+id/heading_name"
+        android:layout_width="match_parent"
+     android:background="@color/bg_grey"
+        android:layout_above="@+id/checkout"
+        android:layout_height="match_parent" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkout"
+        android:layout_alignParentBottom="true"
+        android:text="CheckOut"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/white"/>
+
+
+</RelativeLayout>
+</layout>

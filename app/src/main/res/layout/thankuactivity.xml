@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_add" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Thanks for shopping with Us."
+        android:textSize="20sp"
+        android:textStyle="italic|bold"
+android:id="@+id/order_text"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card_view1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_orderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Order Number  : "
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/card_view1"
+            />
+
+        <TextView
+            android:id="@+id/order_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#1234445"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_orderNumber"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignTop="@+id/txt_orderNumber" />
+    </LinearLayout>
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/order_text"
+        android:layout_gravity="center"
+      android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/card_view1"
+        android:layout_marginTop="30dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+             <TextView
+                android:layout_width="match_parent"
+                android:text="xyz ,sector 15"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:id="@+id/address"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/card_view2"
+        android:layout_gravity="center"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Payable Amount " />
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="Rs 220" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of items" />
+            <TextView
+                android:id="@+id/items"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="left"
+                android:layout_marginRight="20dp"
+
+                android:layout_height="wrap_content"
+                android:text="Rs 42" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time of delivery" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:text="Rs 780" />
+        </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorPrimary"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" /></RelativeLayout>
+</layout>

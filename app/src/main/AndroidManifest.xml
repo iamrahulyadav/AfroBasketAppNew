@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.webistrasoft.org.ecommerce">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+     <application
+        android:name="com.afrobaskets.App.constant.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+         <service android:name="com.afrobaskets.App.activity.MyFirebaseMessagingService">
+             <intent-filter>
+                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
+             </intent-filter>
+         </service>
+         <!-- [END firebase_service] -->
+         <!-- [START firebase_iid_service] -->
+         <service android:name="com.afrobaskets.App.activity.MyFirebaseInstanceIDService">
+             <intent-filter>
+                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+             </intent-filter>
+         </service>
+         <receiver android:name="com.afrobaskets.App.activity.MySMSBroadCastReceiver" >
+             <intent-filter android:priority="999" >
+                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+             </intent-filter>
+         </receiver>
+        <activity
+            android:name="com.afrobaskets.App.activity.SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+             android:name="com.afrobaskets.App.activity.NotificationActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.PaymentActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.CategoriesActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.ImageShow"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.OfferAndHotDealViewAllActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.LoginActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:launchMode= "singleTask"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.AddressList"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.AboutUsActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+
+         <activity android:name="com.afrobaskets.App.activity.ForgetPassword"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.ProductDetailActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.PlaceOrderActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <!--<activity android:name="com.afrobaskets.App.activity.OfferAndHotDealViewAllActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>-->
+         <activity android:name="com.afrobaskets.App.activity.ChangePassword"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.ThankuActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.ViewAndTrackOrderActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.Product_List_Activity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.CartListActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+
+        <activity android:name="com.afrobaskets.App.activity.CitySearchActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.SearchActivity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+
+        <activity android:name="com.afrobaskets.App.activity.HelpActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.afrobaskets.App.activity.CityListActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+         <activity android:name="com.afrobaskets.App.activity.Address_Activity"
+             android:windowSoftInputMode="adjustPan"
+             android:screenOrientation="portrait"/>
+      <activity android:name="com.afrobaskets.App.activity.SubCategoryActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.afrobaskets.App.activity.ProfileActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name="com.afrobaskets.App.activity.CustomerMobileActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.afrobaskets.App.activity.SignUp_Activity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.afrobaskets.App.activity.PreviousOrder_Activity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.afrobaskets.App.activity.ReorderActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.afrobaskets.App.activity.OrderSummeryActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"/>
+
+         <activity
+            android:name="com.afrobaskets.App.activity.OtpActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.afrobaskets.App.activity.CustomerMobileActivity" />
+
+         <activity
+            android:name="com.afrobaskets.App.drawer.Order"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.afrobaskets.App.activity.CategoriesActivity" />
+
+        <activity
+            android:name="com.afrobaskets.App.drawer.AboutUs"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.afrobaskets.App.activity.CategoriesActivity" />
+
+        <activity
+            android:name="com.afrobaskets.App.drawer.Contacts"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.afrobaskets.App.activity.CategoriesActivity" />
+
+
+
+        <activity
+            android:name="com.afrobaskets.App.drawer.Rate"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.afrobaskets.App.activity.CategoriesActivity" />
+
+        <activity
+            android:name="com.afrobaskets.App.drawer.Share"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.afrobaskets.App.activity.CategoriesActivity" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="9a74afd63bc771ca82a2ad10a02a78f3ea995a34" />
+
+         <meta-data
+             android:name="com.google.android.geo.API_KEY"
+             android:value="AIzaSyCVZmuP_2oYY_zYKgPB__qE3hskhDLhnDU"/>
+         <meta-data
+             android:name="com.google.android.gms.version"
+             android:value="@integer/google_play_services_version"/>
+    </application>
+
+</manifest>

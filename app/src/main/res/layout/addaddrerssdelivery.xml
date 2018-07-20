@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar_add"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/toolbar"
+            android:gravity="center"
+            android:id="@+id/heading_name"
+            android:background="@color/heading_grey"
+            android:textColor="@android:color/black"
+            android:textSize="12dp"
+            android:text="Delivery Address"/>
+        <ScrollView
+            android:layout_below="@+id/heading_name"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/btn_login"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <EditText
+                        android:id="@+id/txt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First Name"
+                        android:singleLine="true"
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>.
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+                        android:id="@+id/txt_house_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="House Number"
+                        android:singleLine="true"
+
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>.
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:singleLine="true"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+                        android:id="@+id/street_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Street Detail"
+                        android:inputType="text"
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+                        android:id="@+id/txt_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Area"
+                        android:singleLine="true"
+android:editable="false"
+                        android:focusable="false"
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                    <EditText
+android:id="@+id/address_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+
+                        android:hint="Address Nick Name"
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+android:id="@+id/landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Landmark"
+                        android:singleLine="true"
+
+                        android:inputType="text"
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+                        android:id="@+id/txt_city_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="City Name"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:inputType="text"
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>.
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+android:id="@+id/zipcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Pincode"
+                        android:inputType="number"
+                        android:singleLine="true"
+
+                        android:textSize="16sp"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/dark_grey"
+            android:textColor="@android:color/white"
+            android:text="Login">
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/round_button_selected"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

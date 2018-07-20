@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.afrobaskets.App.activity.OtpActivity">
+    <include
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar_add"/>
+    <TextView
+        android:id="@+id/mobile_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Otp sent on your mobile"/>
+
+    <EditText
+        android:id="@+id/edt_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/mobile_show"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="OTP Number"
+        android:inputType="number"
+        android:maxLength="4"
+
+        android:padding="5dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_below="@+id/edt_otp"
+android:weightSum="2"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/otp_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/ic_button"
+        android:text="Submit"
+        android:layout_weight="1"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:id="@+id/otp_resend"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edt_otp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/ic_button"
+        android:text="Resend"
+        android:textAllCaps="false"/>
+</LinearLayout>
+</RelativeLayout>
